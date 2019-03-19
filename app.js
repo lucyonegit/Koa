@@ -23,6 +23,8 @@ app.context.sqlquery = Sqlquery;
 /**加载路由监听 */
 routerBus.map(v => v(router));
 // 在端口3000监听:
-app.listen(3000);
+app.listen(3000, () => {
+    console.log('server is running at：3000...');
+});
 
-console.log('server is running at：3000...');
+
